@@ -1,0 +1,77 @@
+/* A simple look so the shop feels like a real shop.
+   Nothing fancy here, it just saves us from working on a plain white page. */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+}
+
+/* The dark bar at the top, holding the shop name and the navigation. */
+.topbar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* The little badge that always shows which mode we are in, so we never get lost. */
+.mode-badge {
+    background-color: #c0392b;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+/* The central area where each page's content lives. */
+.content {
+    max-width: 700px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+/* Each comment sits in its own little box so it stands apart from the others. */
+.comment {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.comment strong {
+    color: #2c3e50;
+}
+
+/* The text fields and the buttons. */
+input[type=text], input[type=password], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a252f;
+}
